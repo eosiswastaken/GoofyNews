@@ -29,7 +29,7 @@ function ErrorPage() {
           </div>
         </div>
         <div className="link unselectable">
-          <a href="/">Se recultiver 🧠</a>
+          <a href="/">Se reculturer 🧠</a>
         </div>
       </>
       )
