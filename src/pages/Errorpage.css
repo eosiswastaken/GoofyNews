@@ -1,0 +1,144 @@
+@import '../index.css';
+
+body {
+    background-color: var(--goofy-orange);
+}
+
+.container-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.error {
+    font-family: 'Goofy Font';
+    font-size: 200px;
+    width: 100%;
+    text-align: center;
+    color: var(--goofy-red);
+}
+
+.error.is-animated {
+    margin-top: 0.6em;
+}
+
+.error.is-animated span {
+    display: inline-block;
+    animation: wave-text 1s ease-in-out infinite;
+}
+
+.error.is-animated span:nth-of-type(1) {
+    animation-delay: 0.0s;
+}
+
+.error.is-animated span:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.error.is-animated span:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+.error.is-animated span:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.error.is-animated span:nth-of-type(5) {
+    animation-delay: 0.4s;
+}
+
+.error.is-animated span:nth-of-type(6) {
+    animation-delay: 0.5s;
+}
+
+.error.is-animated span:nth-of-type(7) {
+    animation-delay: 0.6s;
+}
+
+.error.is-animated span:nth-of-type(8) {
+    animation-delay: 0.7s;
+}
+
+.error.is-animated span:nth-of-type(9) {
+    animation-delay: 0.8s;
+}
+
+.error.is-animated span:nth-of-type(10) {
+    animation-delay: 0.9s;
+}
+
+.error.is-animated span:nth-of-type(11) {
+    animation-delay: 1s;
+}
+
+.error.is-animated span:nth-of-type(12) {
+    animation-delay: 1.1s;
+}
+
+.error.is-animated span:nth-of-type(13) {
+    animation-delay: 1.2s;
+}
+
+.error.is-animated span:nth-of-type(14) {
+    animation-delay: 1.3s;
+}
+
+.error.is-animated span:nth-of-type(15) {
+    animation-delay: 1.4s;
+}
+
+.error.is-animated span:nth-of-type(16) {
+    animation-delay: 1.5s;
+}
+
+.error.is-animated span:nth-of-type(17) {
+    animation-delay: 1.6s;
+}
+
+.error.is-animated span:nth-of-type(18) {
+    animation-delay: 1.7s;
+}
+
+.error.is-animated span:nth-of-type(19) {
+    animation-delay: 1.8s;
+}
+
+
+
+@keyframes wave-text {
+    0% {
+        transform: translateY(0em) scaleY(100%);
+    }
+
+    60% {
+        transform: translateY(-0.6em) scaleY(150%);
+    }
+
+    100% {
+        transform: translateY(0em) scaleY(100%);
+    }
+}
+
+/* link */
+.link {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 900;
+}
+
+.link a {
+    color: var(--goofy-dark-green);
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    cursor: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
