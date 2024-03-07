@@ -1,0 +1,23 @@
+/* FONT GOOFY NEWS */
+@font-face {
+    font-family: 'Goofy Font';
+    src: url('./Fonts/RetroCool-Regular.woff2') format('woff2'),
+      url('./Fonts/RetroCool-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  :root{
+    --dark-gray: rgb(50, 50, 50);
+    --goofy-green: #219a55;
+    --goofy-dark-green: #1e693f;
+    --goofy-yellow: yellow;
+
+  }
