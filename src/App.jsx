@@ -4,6 +4,9 @@ function App() {
 
   return (
     <>
+   <div className='title'>
+    <h1>Goofy News</h1>
+   </div>
     </>
   )
 }
