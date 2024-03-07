@@ -4,8 +4,19 @@ function App() {
 
   return (
     <>
-   <div className='title'>
-    <h1>Goofy News</h1>
+<div className="container-title">
+   <div className='title is-animated'>
+    <span>G</span>
+    <span>o</span>
+    <span>o</span>
+    <span>f</span>
+    <span>y</span>
+    
+    <span>N</span>
+    <span>e</span>
+    <span>w</span>
+    <span>s</span>
+   </div>
    </div>
     </>
   )

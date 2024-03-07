@@ -6,15 +6,51 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/* ----------------- */
 body{
   background-color: yellow;
 }
 
-.title{
+.container-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} 
+
+.title {
   font-family: 'Goofy Font';
-  font-size: 150px;
+  font-size: 200px;
   width: 100%;
   text-align: center;
-color: #219a55;
+  color: #219a55;
 }
+
+.title.is-animated {
+  margin-top: 0.6em;
+}
+
+.title.is-animated span {
+  display: inline-block;
+  animation: wave-text 1s ease-in-out infinite;
+}
+
+.title.is-animated span:nth-of-type(1) { animation-delay: 0.0s; }
+.title.is-animated span:nth-of-type(2) { animation-delay: 0.1s; }
+.title.is-animated span:nth-of-type(3) { animation-delay: 0.2s; }
+.title.is-animated span:nth-of-type(4) { animation-delay: 0.3s; }
+.title.is-animated span:nth-of-type(5) { animation-delay: 0.4s; }
+.title.is-animated span:nth-of-type(6) { animation-delay: 0.5s; }
+.title.is-animated span:nth-of-type(7) { animation-delay: 0.6s; }
+.title.is-animated span:nth-of-type(8) { animation-delay: 0.7s; }
+.title.is-animated span:nth-of-type(9) { animation-delay: 0.8s; }
+.title.is-animated span:nth-of-type(10) { animation-delay: 0.9s; }
+
+
+
+@keyframes wave-text {
+  0% { transform: translateY(0em) scaleY(100%); }
+  60% { transform: translateY(-0.6em) scaleY(150%); }
+  100% { transform: translateY(0em) scaleY(100%); }
+}
+
