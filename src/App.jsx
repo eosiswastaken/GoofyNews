@@ -1,11 +1,13 @@
 import './App.css'
 import { Analytics } from "@vercel/analytics/react"
+import CustomCursor from './components/Cursor'
 
 function App() {
 
   return (
     <>
       <Analytics />
+      <CustomCursor />
         <div className="container-title">
           <div className='title is-animated unselectable'>
             <span>G</span>

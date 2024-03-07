@@ -1,16 +1,7 @@
-/* FONT GOOFY NEWS */
-@font-face {
-  font-family: 'Goofy Font';
-  src: url('./Fonts/RetroCool-Regular.woff2') format('woff2'),
-    url('./Fonts/RetroCool-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import './index.css';
 
 body {
-  background-color: yellow;
-  
+  background-color: var(--goofy-orange);
 }
 
 .container-title {
@@ -26,7 +17,7 @@ body {
   font-size: 150px;
   width: 100%;
   text-align: center;
-color: #219a55;
+color: var(--goofy-green);
 }
 
 .title.is-animated {
@@ -109,6 +100,7 @@ color: #219a55;
   color: var(--goofy-green);
   text-decoration: none;
   transition: all 1s ease-in-out;
+  cursor: none;
 }
 
 .link a:hover {
