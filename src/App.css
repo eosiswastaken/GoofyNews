@@ -18,6 +18,20 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* FONT GOOFY NEWS */
+@font-face {
+  font-family: 'Goofy Font';
+  src: url('./Fonts/RetroCool-Regular.woff2') format('woff2'),
+      url('./Fonts/RetroCool-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title h1{
+  font-family: 'Goofy Font';
+  font-size: 200px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
