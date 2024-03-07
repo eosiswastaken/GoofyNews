@@ -18,10 +18,10 @@
     cursor: none;
   }
 
-  :root{
-    --dark-gray: rgb(50, 50, 50);
-    --goofy-green: #219a55;
-    --goofy-dark-green: #1e693f;
-    --goofy-yellow: yellow;
-
-  }
+  
+/* COLORS GOOFY NEWS */
+:root{
+  --goofy-orange: #eaaa32;
+  --goofy-green: #86A612;
+  --goofy-dark-green: #3E4001;
+}
