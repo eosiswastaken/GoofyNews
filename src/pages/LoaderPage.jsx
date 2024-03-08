@@ -24,7 +24,7 @@ function LoaderPage() {
           </div>
         </div>
         <div className="link unselectable">
-          <a href="">Devenir culturé 🧠</a>
+          <a href="/Home">Devenir culturé 🧠</a>
         </div>
       </>
       )

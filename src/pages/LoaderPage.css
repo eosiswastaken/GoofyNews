@@ -71,19 +71,6 @@ color: var(--goofy-green);
 
 
 
-@keyframes wave-text {
-  0% {
-    transform: translateY(0em) scaleY(100%);
-  }
-
-  60% {
-    transform: translateY(-0.6em) scaleY(150%);
-  }
-
-  100% {
-    transform: translateY(0em) scaleY(100%);
-  }
-}
 
 /* link */
 .link {
