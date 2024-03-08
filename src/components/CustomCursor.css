@@ -1,0 +1,18 @@
+.custom-cursor{
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    width: 40px;
+    height: auto;
+    /* border: 2px solid #000; */
+    border-radius: 50%;
+    transform: translate(-50%, -10%);
+    transition: all 0.3s ease;
+    /* mix-blend-mode: difference; */
+    transition: all 0.3s ease;
+    transition-property: width, height, border;
+}
+
+.custom-cursor img{
+   width: 100%;
+}

@@ -1,26 +1,26 @@
 import './App.css'
-import { Analytics } from "@vercel/analytics/react"
+// import { BrowserRouter as Route, Switch } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import LoaderPage from './pages/LoaderPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LoaderPage />,
+      errorElement: <ErrorPage />,
+    }
+  ]);
+
 
   return (
     <>
-<div className="container-title">
-   <div className='title is-animated'>
-    <span>G</span>
-    <span>o</span>
-    <span>o</span>
-    <span>f</span>
-    <span>y</span>
-    
-    <span>N</span>
-    <span>e</span>
-    <span>w</span>
-    <span>s</span>
-   </div>
-   </div>
-    </>
-  )
+      <RouterProvider router={router} />
+    </>)
 }
 
-export default App
+      export default App
