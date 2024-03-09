@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import LoaderPage from './pages/LoaderPage';
+import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
     {
       path: "/",
       element: <LoaderPage />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/Home",
+      element: <HomePage />,
       errorElement: <ErrorPage />,
     }
   ]);

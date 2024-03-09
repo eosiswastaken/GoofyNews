@@ -16,3 +16,11 @@
 .custom-cursor img{
    width: 100%;
 }
+
+
+.custom-cursor.inactive{
+    visibility: hidden;
+ }
+
+
+ 
