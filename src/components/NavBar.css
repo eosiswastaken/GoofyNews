@@ -3,6 +3,7 @@
     width: 100%;
     background-color: var(--goofy-orange);
     border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .nav-bar{
