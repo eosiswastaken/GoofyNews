@@ -1,8 +1,6 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 
-
 const RubriqueContext = createContext();
-
 
 // eslint-disable-next-line react/prop-types
 export const RubriqueProvider = ({children}) => {
