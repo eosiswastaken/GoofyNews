@@ -1,14 +1,23 @@
 import './NavBarRubrique.css'; 
+import { useRubrique } from '../Context/RubriqueContext'; 
+
 
 import PropTypes from 'prop-types';
 
 function NavBarRubrique(props) {
-  const {rubrique_titre, rubrique_lien} = props;
+
+
+  const {rubrique_titre} = props;
+  const { openedRubrique, setOpenedRubrique } = useRubrique();
+
+
 
 
   return (
-    <a href={rubrique_lien}><h3 className='nav-bar-rubrique'>{rubrique_titre}</h3></a>
-  );
+  <h3 className={`nav-bar-rubrique ${openedRubrique === rubrique_titre ? 'selected' : ''}`} onClick={()=> setOpenedRubrique(rubrique_titre)}>
+      {rubrique_titre}
+    </h3>
+    );
 
 
 }

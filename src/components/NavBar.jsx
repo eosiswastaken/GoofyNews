@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import NavBarRubrique from './NavBarRubrique';
 import './NavBar.css'
 
+
 function NavBar() {
 
     const [titleIsHovered, settitleIsHovered] = useState(true);
@@ -15,7 +16,8 @@ function NavBar() {
 
     
 
-    const rubriques = [["Home", "/Home"], ["World", "/world"], ["Politics", "/politics"]]
+    // const rubriques = [["Home", "/Home"], ["World", "/world"], ["Politics", "/politics"]]
+    const rubriques = ["Home", "World", "Politics"]
 
 
     return (
@@ -39,7 +41,7 @@ function NavBar() {
 
                     <div className="nav-bar-links">
                     {rubriques.map((rubrique, index) => {
-                        return <NavBarRubrique key={index} rubrique_titre={rubrique[0]} rubrique_lien={rubrique[1]} />
+                        return <NavBarRubrique key={index} rubrique_titre={rubrique}  />
                     })}
                     </div>
                 </div>

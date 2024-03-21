@@ -8,6 +8,9 @@ import LoaderPage from './pages/LoaderPage';
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 
+import { RubriqueProvider } from './Context/RubriqueContext'; 
+
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -25,7 +28,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <RubriqueProvider>
+        <RouterProvider router={router} />
+      </RubriqueProvider>
     </>)
 }
 
