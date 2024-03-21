@@ -4,8 +4,10 @@ import KeyEventListener from '../components/KeyEventListener';
 import './HomePage.css';
 import PdfViewer from '../components/PdfViewer';
 
-function HomePage() {
+import pdf from '../PDF_ARTICLES/Article scientifique.pdf';
+import pdf2 from '../PDF_ARTICLES/article grabiel.pdf';
 
+function HomePage() {
 
 
     return (
@@ -14,7 +16,7 @@ function HomePage() {
             <CustomCursor />
             <NavBar/>
             <div className="container-home-page"></div>
-            <PdfViewer />
+            <PdfViewer pdf={pdf2} />
         </>
     )
 

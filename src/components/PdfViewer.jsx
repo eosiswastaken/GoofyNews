@@ -1,15 +1,13 @@
 import './Pdfviewer.css';
-import pdf from '../PDF_ARTICLES/Article scientifique.pdf';
 
-function PdfViewer() {
-
+function PdfViewer(props) {
+    const { pdf } = props; // Extraire directement la propriété 'pdf' de 'props'
 
     return (
         <>
-            <iframe src={`${pdf}#toolbar=0`}  className='iframe'></iframe>
+            <iframe src={`${pdf}#toolbar=0`} className='iframe'></iframe>
         </>
-    )
-
+    );
 }
 
-export default PdfViewer
+export default PdfViewer;
